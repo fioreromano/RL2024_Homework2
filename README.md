@@ -47,7 +47,7 @@ In the code, the value of the parameter `k` determines which trajectory the robo
     ```
 2. In a second terminal, run:
     ```bash
-    ros2 run ros2_kdl_package ros2_kdl_node --ros-args -p cmd_interface:=velocity --ros-args -p k:=1
+    ros2 run ros2_kdl_package ros2_kdl_node --ros-args -p cmd_interface:=velocity -p k:=1
     ```
 > **Note:**  
 > The robot will be launched by with the **velocity interface**.  
@@ -62,14 +62,14 @@ In the code, the value of the parameter `k` determines which trajectory the robo
 2. Wait for 5 seconds and press the **Play button** in **Gazebo**. ⏱️🎮
 3. In a second terminal, run:
     ```bash
-    ros2 run ros2_kdl_package ros2_kdl_node --ros-args -p cmd_interface:=effort --ros-args -p k:=1
+    ros2 run ros2_kdl_package ros2_kdl_node --ros-args -p cmd_interface:=effort -p k:=1
     ```
 
 > **Note:**  
 > The robot will be launched by default with the **effort interface** in the **joint space**.  
 > If you want to use the **effort controller** in the **operational space**, run: 
     ```bash
-    ros2 run ros2_kdl_package ros2_kdl_node --ros-args -p cmd_interface:=effort --ros-args -p k:=1 --ros-args -p effort:=cartesian
+    ros2 run ros2_kdl_package ros2_kdl_node --ros-args -p cmd_interface:=effort -p k:=1 -p effort:=cartesian
     ```
 
 ---
