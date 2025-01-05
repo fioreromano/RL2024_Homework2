@@ -1,4 +1,4 @@
-# **Homework 1** 🎓🤖
+# **Homework 2** 🎓🤖
 
 Welcome to Homework 2! The primary goal of this homework is to control a robotic arm to follow pre-defined trajectories with smooth and accurate movements. The code will:
 - Replace the existing velocity profile with a cubic polynomial, providing a smoother transition between positions.
